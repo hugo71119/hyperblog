@@ -33,3 +33,5 @@ git stash branch nombre_de_rama : Crea una rama y aplica el stash mas reciente.
 git stash branch nombre_de_rama stash@{num_stash} : Crea una rama y aplica el stash especificado.
 
 Existe un mundo alternativo en el cual vamos avanzando en una rama pero necesitamos en master uno de esos avances de la rama, para eso utilizamos el comando git cherry-pick IDCommit
+
+A veces hacemos un commit, pero resulta que no queríamos mandarlo porque faltaba algo más. Utilizamos git commit --amend, amend en inglés es remendar y lo que hará es que los cambios que hicimos nos los agregará al commit anterior.
