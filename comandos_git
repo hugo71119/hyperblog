@@ -35,3 +35,10 @@ git stash branch nombre_de_rama stash@{num_stash} : Crea una rama y aplica el st
 Existe un mundo alternativo en el cual vamos avanzando en una rama pero necesitamos en master uno de esos avances de la rama, para eso utilizamos el comando git cherry-pick IDCommit
 
 A veces hacemos un commit, pero resulta que no queríamos mandarlo porque faltaba algo más. Utilizamos git commit --amend, amend en inglés es remendar y lo que hará es que los cambios que hicimos nos los agregará al commit anterior.
+
+¿Qué pasa cuando todo se rompe y no sabemos qué está pasando? Con git reset HashDelHEAD nos devolveremos al estado en que el proyecto funcionaba.
+
+    git reset --soft HashDelHEAD te mantiene lo que tengas en staging ahí.
+    git reset --hard HashDelHEAD resetea absolutamente todo incluyendo lo que tengas en staging.
+
+git reset es una mala práctica, no deberías usarlo en ningún momento; debe ser nuestro último recurso.
